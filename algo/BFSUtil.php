@@ -1,7 +1,6 @@
 <?php
 
-namespace algo;
-class BFS
+class BFSUtil
 {
     /**
      * @var array Tableau des données en entrée

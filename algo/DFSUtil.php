@@ -1,7 +1,6 @@
 <?php
 
-namespace algo;
-class DFS
+class DFSUtil
 {
     /**
      * @var array Tableau des données en entrée
