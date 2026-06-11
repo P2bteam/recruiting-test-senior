@@ -1,13 +1,14 @@
 <?php
 
 // Page incluse dans un contexte plus global (App)
+use review\Utilisateur;
+
 include("../connection.php"); // Inclusion de la connection à la BD + classe d'appel
-include("../classes.php"); // Inclusion du loader de classe
 
 $message = "Bad request";
 if (isset($_REQUEST["action"])) {
     if ($_REQUEST["action"] === "login") {
-        $objUser = new User();
+        $objUser = new Utilisateur();
         $id = $objUser->signIn($_REQUEST["userName"], $_REQUEST["userPassword"]);
         if ($id != null) {
             $message = "";
@@ -16,7 +17,7 @@ if (isset($_REQUEST["action"])) {
             $message = "Connection error";
         }
     } elseif ($_REQUEST["action"] === "signup") {
-        $objUser = new User();
+        $objUser = new Utilisateur();
         if ($objUser->register($_REQUEST)) {
             $message = "Register success";
         } else {

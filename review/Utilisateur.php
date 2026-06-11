@@ -1,9 +1,10 @@
 <?php
 
 namespace review;
+
 use BD;
 
-class User
+class Utilisateur
 {
     /**
      * Rôle utilisateur de base

@@ -1,0 +1,82 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "comment": "je suis le 1er commentaire !!!",
+      "place": 1,
+      "createdAt": "2026-05-01 10:29:01",
+      "createdBy": 1,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 2,
+      "comment": "C'\u00e9tait trop pentu",
+      "place": 2,
+      "createdAt": "2026-06-11 12:38:42",
+      "createdBy": 2,
+      "updatedAt": null,
+      "updatedBy": null
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "createdAt": "2026-05-01 08:00:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 2,
+      "name": "Vanessa Petit",
+      "createdAt": "2026-05-01 08:01:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 3,
+      "name": "Albert de la Prairie",
+      "createdAt": "2026-05-01 08:02:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 4,
+      "name": "Louise Dupont",
+      "createdAt": "2026-05-01 08:03:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "name": "La tour eiffel",
+      "createdAt": "2026-05-01 08:00:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 2,
+      "name": "le mont ventoux",
+      "createdAt": "2026-05-01 08:00:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    },
+    {
+      "id": 3,
+      "name": "le vieux port",
+      "createdAt": "2026-05-01 08:00:00",
+      "createdBy": null,
+      "updatedAt": null,
+      "updatedBy": null
+    }
+  ]
+}

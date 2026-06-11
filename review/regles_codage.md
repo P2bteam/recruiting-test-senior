@@ -4,7 +4,8 @@
 
 - Niveau de code : PHP7.4
 - Utilisation de [PSR-2](https://www.php-fig.org/psr/psr-2/) SAUF utilisation de tabulation de taille 4
-- Utilisation de [PSR Naming Conventions](https://www.php-fig.org/bylaws/psr-naming-conventions/) pour le nommage (Interface, Classes, Traits, ...)
+- Utilisation de [PSR Naming Conventions](https://www.php-fig.org/bylaws/psr-naming-conventions/) pour le nommage
+  (Interface, Classes, Traits, ...)
 - Préfixer les tableaux par tab `$tabClients`
 - Préfixer les objets par obj `$objCsv`
 - Utiliser `isset()` lorsque l'on accède à un indice d'un tableau défini dynamiquement
@@ -13,13 +14,14 @@
 ## Requêtes SQL :
 
 - Espaces dans les requêtes SQL `FIELD = '1'`
-- Privilégier les `JOIN` aux sous-requêtes `IN (SELECT ID_XXX)`. S'il n'est pas possible de faire avec un `JOIN`, limiter à une sous-requête (ne pas les chaîner)
+- Privilégier les `JOIN` aux sous-requêtes `IN (SELECT ID_XXX)`. S'il n'est pas possible de faire avec un `JOIN`,
+  limiter à une sous-requête (ne pas les chaîner)
 - Utiliser un bloc
 
 ```php
 $querySql = "SELECT *
-	FROM ".$GLOBALS["table_acheteurs"]."
-	WHERE ID_CLIENT = '".HelperDatabase::protegerSQL($id_client)."'";
+	FROM ".$GLOBALS["table_buyers"]."
+	WHERE ID = '".HelperDatabase::protegerSQL($id)."'";
 $result = BD::execute($querySql);
 if (BD::rowCount($result) > 0) {
 	while ($row = BD::fetch($result)) {
